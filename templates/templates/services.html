@@ -1,0 +1,50 @@
+{% extends "basic.html" %}
+{% block body %}
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+      <h1 class="display-3">Services</h1>
+      <p class="lead">The best free stock Articles on Current and the nodal agency of the Government of India to disseminate information to the print and electronic media on government policies, programmes, initiatives and achievements. </p>
+      <a href="/" class="btn btn-primary btn-lg">Back!</a>
+    </header>
+
+    <!-- Page Features -->
+    <div class="alert alert-danger" role="alert">    
+  <h4 class="alert-heading"><b>Monthly Magazine</b></h4>
+  <p>Our strong and experienced team summarizes each issue of the Monthly Magazine to help students help in revision.
+You can Read the Magazine Summary through the links below :</p><br>
+<ul>
+    <li>Yojana</li>
+    <p>Yojana Magazine presents government point of view on issues and also provide data and analysis for the same.
+Reading Yojana Magazine will help you in Essay writing as these magazines analyzes each topic through multiple perspectives by various people of diverse background.
+Yojana is a monthly magazine and covers a good portion of the mains syllabus especially for General Studies.
+You can also find out information about recently launched government schemes, government initiatives, policy initiatives etc.
+   </p>
+
+    <li> Press Information Bureau (PIB)</li>
+    <p>Programs, and policy initiatives and updates from the government.
+Articles on important personalities, some historical accounts.
+All schemes of the government.
+Speeches by prominent people. Questions can be directly asked for the UPSC prelims from them.
+Year-end reports by the various ministries and departments on the work done by them in that year.
+    </p>
+    <li>Pratiyogita darpan</li>
+    
+</ul>
+<br> 
+<hr>
+  <p class="mb-0">by Chief Editor's.</p>
+</div>
+</div>
+<!-- Bootstrap core JavaScript -->
+  <script src="{{url_for('static',filename='vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{url_for('static',filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+</body>
+
+</html>
+
+{% endblock %}

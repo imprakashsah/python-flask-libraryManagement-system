@@ -1,0 +1,71 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>Digital Background login</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/floating-labels/">
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="{{url_for('static',filename='vendor/bootstrap/css/floating-labels.css')}}" rel="stylesheet">
+
+  </head>
+  <body>
+    <form class="form-signin" action="/dashboard" method="post">
+  <div class="text-center mb-4">
+    {%set fname ='vendor/images/'+ params['login_image'] %}
+    <img class="card-img-top" src="{{url_for('static',filename=fname)}}" alt="" width=""72 height="72">
+    <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+    
+  </div>
+
+  <div class="form-label-group">
+    <input type="text" id="uname" name="uname" class="form-control" placeholder="User Name" required autofocus>
+    <label for="inputEmail">Email address</label>
+  </div>
+
+  <div class="form-label-group">
+    <input type="password" id="pass" name="pass" class="form-control" placeholder="Password" required>
+    <label for="inputPassword">Password</label>
+  </div>
+
+
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" value="remember-me"> Remember me
+    </label>
+  </div>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+  <p class="mt-4 mb-3 text-muted"> &copy; {{params['blog_name']}} 2020-2021</p>
+   <p class="text-center"><a class="nav-link" href="/usersignup">Creat Account</a></p>
+
+ 
+</form>
+</body>
+</html>
+

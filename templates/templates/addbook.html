@@ -1,0 +1,112 @@
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+{% extends "basic.html" %}
+{% block body %}
+
+   
+  
+    
+    <div id="message">
+      <div class="alert  alert-${type} alert-dismissible fade show" role="alert" >
+        <strong>Data missing</strong> check details
+        <button type="button" class="close" data-dismiss="alert" aria-label="close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    </div>
+    <br>
+    <div class="container">
+
+        <!-- Jumbotron Header -->
+        <header class="container my-4">
+            <div>
+            <h1 style="color:rgb(255,0,0)" class="display-4">Ignou library</h1> <h3>Add New Book</h3>
+        </div>
+            <hr>
+            <form role="form" id="libraryForm" action="/book" method="post">
+                <div class="form-group row">
+                  <label for="namebook" class="col-sm-2 col-form-label">Name</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" name="bookname" id="bookname"  placeholder="Name Of book" >
+                  </div>
+                </div>
+                <div class="form-group row">
+                    <label for="bookauthor" class="col-sm-2 col-form-label">Author</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" name="bookauthor" id="bookauthor"  placeholder="Author" >
+                    </div>
+                  </div>
+                <div class="form-group row">
+                  <label for="bookisbn" class="col-sm-2 col-form-label">Isbn</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" name="isbn" id="isbn" placeholder="isbn"  >
+                  </div>
+                </div>
+                <fieldset class="form-group">
+                  <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0">Type</legend>
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="type" id="mca" value="mca" checked>
+                        <label class="form-check-label" for="mca">
+                          MCA
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="type" id="bca" value="bca">
+                        <label class="form-check-label" for="bca">
+                          BCA
+                        </label>
+                      </div>
+                     
+                    </div>
+                  </div>
+                </fieldset>
+                
+                <div class="form-group row">
+                  <div class="col-sm-10">
+                    <button type="submit" id="libraryForm" class="btn btn-primary">Add Book</button>
+                  </div>
+                </div>
+              </form>
+            <br>
+            <hr>
+            <h1>Yours Books</h1>
+            <div id="table">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                          
+                            <th scope="col">Name</th>
+                            <th scope="col">Author</th>
+                            <th scope="col">Isbn No.</th>
+                            <th scope="col">Type</th>
+                        </tr>
+                    </thead>
+                          <tbody id="tableBody">
+                    </tbody>
+                </table>
+            </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{{url_for('static',filename='vendor/jquery/addbook.js')}}"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+{% endblock %}

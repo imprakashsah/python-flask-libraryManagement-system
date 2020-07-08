@@ -1,0 +1,35 @@
+{% extends "basic.html" %}
+{% block body %}
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Jumbotron Header -->
+ <header class= "jumbotron my-4" >
+      <h1 class="display-3">Articles</h1>
+      <p class="lead"></p>
+      <a href="/" class="btn btn-primary btn-lg">Back!</a>
+    </header>
+
+
+    <!-- Page Features -->
+    <div class="alert alert-success" role="alert">
+      <div class="row">
+      <div class="col-lg-11 col-md-10 mx-auto">
+  <h3 class="alert-heading text-center text-red"><b>{{post.tittle}}</b></h3>
+  <p>{{post.content}}</p><br>
+<hr> 
+  <p class="mb-0">by {{post.author}} </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bootstrap core JavaScript -->
+  <script src="{{url_for('static',filename='vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{url_for('static',filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+</body>
+
+</html>
+   
+{% endblock %}

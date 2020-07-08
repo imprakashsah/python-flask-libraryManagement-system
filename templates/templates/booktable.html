@@ -1,0 +1,79 @@
+{% extends "basic.html" %}
+{% block body %}
+ <div class="container">
+<br>
+<div class="py-5 text-center">
+<div >
+  <h1 class="display-3"style="border:2px solid DodgerBlue;">The book Available in Library</h1>
+</div>
+<hr>
+<br>
+
+
+ <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+              <h2 class="d-flex justify-content-between align-items-center mb-6" style="color:DodgerBlue;>
+                <span class="text-muted">Your Cart</span>
+              </h2>
+        <ul class="list-group mb-3">
+                  <li class="list-group-item d-flex justify-content-between lh-condensed">
+                  <div class="text-success">
+                      <h6 class="my-0">Book</h6>
+                      <small class="text-muted">Max 4 books</small>
+                 </div>
+                      <span class="text-muted">4</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <div class="text-success">
+                          <h6 class="my-0">Quantity</h6>
+                          <small class="text-muted">Brief description</small>
+                        </div>
+                  <span class="text-muted"></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between bg-light">
+                      <div class="text-success">
+                        <h6 class="my-0">About Us</h6>
+                        <small>Brief description</small>
+                      </div>
+                  <span class="text-muted"> </span>
+                </li>
+          </ul>
+      </div>
+    
+
+
+        <div class="col-md-8 order-md-1">
+          <!-- Page Features -->
+        <div class="alert alert-success" role="alert">
+          <div class="table">
+                  <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Serial no.</th>
+                                <th scope="col">Book Name</th>
+                                <th scope="col">Book Author</th>
+                                <th scope="col">IBSN</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Add to cart</th>  
+                            </tr>
+                        </thead>
+                        <tbody>
+                                      {% for book in book %}
+                          <tr>
+                              <th scope="row">{{book.serial}}</th>
+                              <td>{{book.bookname}}</td>
+                              <td>{{book.bookauthor}}</td>
+                              <td>{{book.isbn}}</td>
+                              <td>{{book.type}}</td>
+                              <td ><a href="/edit/{{book.serial}}"><button type="button" class="btn btn-primary">Add</button></a></td>  
+                          </tr>
+                                          {% endfor %}
+                      </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+{% endblock %}

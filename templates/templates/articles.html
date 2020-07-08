@@ -1,0 +1,145 @@
+{% extends "basic.html" %}
+{% block body %}
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+      <h1 class="display-3">Articles</h1>
+      <marquee><p class="lead">The best free stock Articles on current Issues shared by talented editor's.</p> </marquee>
+      <hr><a href="/" class="btn btn-primary btn-lg">Back!</a>
+    </header>
+
+    <!-- Page Features -->
+    <div class="alert alert-success" role="alert">
+  <h4 class="alert-heading"><b>Mitigation of Carbon Footprint</b></h4>
+  <p>Global warming with the burgeoning anthropogenic greenhouse gas (GHG) emissions (400 parts per million from 280 ppm CO2, emissions of pre-industrial era) has been altering the climate, eroding the ecosystem productivity and sustenance of water, thus affecting the <span id="dots">...</span><span id="more">livelihood of people.</p><br>
+<ul>
+  <li>Anthropogenic activities such as burning fossil fuels, polluting water bodies, industrial effluents etc are responsible for increasing GHG footprint of which 72% constitutes CO2.</li>
+    <li>GHG footprint needs to be in balance with sequestration of carbon to sustain ecosystem functions.</li>
+    <li>Forests are the major carbon sink (about 45%) that aid in mitigation global warming.</li>
+    <li>The Land Use Land Cover (LULC) dynamics leading to deforestation and land degradation is the prime driver of global warming due to the loss of carbon sequestration potential as well as emission.</li>
+</ul>
+<p><b>Western Ghats (WG):</b>
+Western Ghats are among the 36 global biodiversity hotspots and forests in this region help in sequestering Carbon which aid in moderating the climate.
+It covers an area of approximately 16,000 sq kms.
+It is considered as a water tower of India due to numerous streams originating and draining millions of hectares.
+Rivers of WG ensure water and food security of 245+ million people in the peninsular Indian states.
+The region has tropical evergreen forests, moist deciduous forests, scrub jungles, sholas and savannas including high rainfall savannas of which 10% of the forest area is under legal protection.
+Carbon Sequestration:
+The Carbon Sequestration of WG have been quantified, which confirms that the forests of WG are incredible reservoirs of biomass and carbon stock, highlighting the role of forests in lowering atmospheric carbon. And mitigation of global warming.
+The Southern and Central WG regions endowed with rich native forests have soils rich in carbon.
+Similar trend is noticed in carbon captured by soil and higher carbon content increment per year is noticed in Karnataka and Central Kerala parts of the WG.</p>
+<p>
+  <b>Carbon Footprint :</b>
+  Carbon footprint is contributed by emissions from the energy sector (68%), agriculture (19.6%), industrial processes (6%), Land Use (LU) change (3.8%) and forestry (1.9%), respectively in India with CO2, emission of about 3.1 MGg (2017) and the per capita CO2 emission of 2.56 metric tonnes.
+  India has committed at the Paris Climate Change Agreement to reduce its emissions by 33-35% by 2030, which necessitates immediate implementation of carbon capture (with afforestation of degraded landscapes with native species, regulations of LULC change) and de-carbonisation (through large-scale implementation of renewable and sustainable energy alternatives).
+  For this, stringent norms must be developed towards
+<ul>
+
+  <li>Protection of ecologically fragile regions</li>
+  <li>Dis-incentives for continued higher emission based on ‘polluter pays’ principle</li>
+  <li>Adoption of cluster-based decentralized development approaches</li>
+  <li>Incentives for reduced emission</li>
+  <li>The carbon trading has demonstrated the potential in monetary values across the globe of Indian forests in capturing carbon.</li>
+  <li>The carbon credit mechanism and streamlining stakeholder’s active participations would dramatically reduce the abuse of forests.</li>
+</ul>
+</p>
+  <p><b>Water and food security towards sustainable and healthy living:</b>
+  Alternations of landscape structure in the catchment areas influence the hydrological regime leading to variations in the hydrological status.
+  The streams are perennial when its catchment is dominated by vegetation (>60%) of native species. This is mainly due to infiltration or percolation in the catchment as soil is porous with the presence of native species.
+  Fragmented governance and the deteriorating ecological ethics with the lack of vision among the decision makers are the principal reasons of deforestation and land degradation.
+  Streams with its catchment dominated native species vegetation (>60%) have higher soil moisture and groundwater in comparison to the catchment (of seasonal streams) during dry spell of the year. It facilitates farming of commercial crops with higher economic returns to the farmers.
+  Sustenance of water in a river ensures the food security in the region which is dependent on the land use dynamics (forest vegetation cover) in its catchment.</p>
+<b>Conclusion:</b>
+Thus, catchment integrity plays a decisive role in sustaining water for societal and ecological need.
+Recent unfortunate instances of floods and subsequent drought (drying up of water bodies) in Karnataka, Maharashtra, and Kerala is a pointer towards the mismanagement of forests in the Western Ghats region.
+Hence, ecologically fragile regions such as Western Ghats need to be conserved on priority to sustain the agriculture and horticulture in the peninsular India.</span></p>
+<button onclick="myFunction()" class="btn btn-primary btn-lg id="myBtn">Read more</button>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<hr> 
+  <p class="mb-0">by Chief Editor's.</p>
+</div>
+    <!-- Articles 2nd -->
+   <div class="alert alert-success" role="alert">
+  <h4 class="alert-heading"><b>Article 2</b></h4>
+  <p>Global warming with the burgeoning anthropogenic greenhouse gas (GHG) emissions (400 parts per million from 280 ppm CO2, emissions of pre-industrial era) has been altering the climate, eroding the ecosystem productivity and sustenance of water, thus affecting the livelihood of people.</p><br>
+<ul>
+    <li>Anthropogenic activities such as burning fossil fuels, polluting water bodies, industrial effluents etc are responsible for increasing GHG footprint of which 72% constitutes CO2.</li>
+    <li>GHG footprint needs to be in balance with sequestration of carbon to sustain ecosystem functions.</li>
+    <li>Forests are the major carbon sink (about 45%) that aid in mitigation global warming.</li>
+    <li>The Land Use Land Cover (LULC) dynamics leading to deforestation and land degradation is the prime driver of global warming due to the loss of carbon sequestration potential as well as emission.</li>
+  
+</ul>
+ <a href="/articles" class="btn btn-primary btn-lg">Read more</a>
+<hr> 
+  <p class="mb-0">by Chief Editor's.</p>
+</div>
+
+<!-- Articles 2nd -->
+
+<div class="col-sm-12" style="background-color:green; ">
+  <h4 class="alert-heading"><b>Article 3</b></h4>
+  <p>Global warming with the burgeoning anthropogenic greenhouse gas (GHG) emissions (400 parts per million from 280 ppm CO2, emissions of pre-industrial era) has been altering the climate, eroding the ecosystem productivity and sustenance of water, thus affecting the livelihood of people.</p><br>
+<ul>
+    <li>Anthropogenic activities such as burning fossil fuels, polluting water bodies, industrial effluents etc are responsible for increasing GHG footprint of which 72% constitutes CO2.</li>
+    <li>GHG footprint needs to be in balance with sequestration of carbon to sustain ecosystem functions.</li>
+    <li>Forests are the major carbon sink (about 45%) that aid in mitigation global warming.</li>
+    <li>The Land Use Land Cover (LULC) dynamics leading to deforestation and land degradation is the prime driver of global warming due to the loss of carbon sequestration potential as well as emission.</li>
+   
+</ul>
+ <a href="/articles" class="btn btn-primary btn-lg">Read more</a>
+<hr> 
+  <p class="mb-0">by Chief Editor's.</p>
+</div>
+<br>
+<!-- Article 3rd -->
+
+<div class="col-sm-12" style="background-color:orange;">       
+  <h4 class="alert-heading"><b>Citizenship Amendment Act 2019 (CAA)</b></h4>
+    <p>The Citizenship Amendment Bill (CAA Bill) was first introduced in 2016 by the Lok Sabha by amending the Citizenship Act of 1955. This bill was referred to a Joint Parliamentary Committee, whose report was later submitted on January 7, 2019. The Citizenship Amendment Bill was passed on January 8, 2019, by the Lok Sabha which lapsed with the dissolution of the 16th Lok Sabha.  This Bill was introduced again on 9 December 2019 by the Minister of Home Affairs Amit Shah in the 17th Lok Sabha and was later passed on 10 December 2019. The Rajya Sabha also passed the bill on 11th December.</p> 
+
+    <p>The CAA was passed to provide Indian citizenship to the illegal migrants who entered India on or before 31st December 2014. The Act was passed for migrants of six different religions such as Hindus, Sikhs, Buddhists, Jains, Parsis and Christians from Afghanistan, Bangladesh and Pakistan. Any individual will be considered eligible for this act if he/she has resided in India during the last 12 months and for 11 of the previous 14 years. For the specified class of illegal migrants, the number of years of residency has been relaxed from 11 years to five years. </p>
+    <a href="/articles" class="btn btn-primary btn-lg">Read more</a>
+    <hr>
+  <marquee><p class="mb-0">Edited by :: Chief Editor - Prakash , Date -8th Apr 2020 </p></marquee>
+  
+</div><br>
+<div class="container">
+  <center>
+             <button class="btn btn-primary hidden-print" onclick="myFunction()"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print</button>
+      </center>
+      <script>
+    function myFunction() {
+    window.print();
+}
+  </script>
+  <p> </p>
+</div>
+
+<!-- Bootstrap core JavaScript -->
+  <script src="{{url_for('static',filename='vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{url_for('static',filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  
+</body>
+
+</html>
+
+{% endblock %}
